@@ -27,7 +27,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: 'http://localhost:5173',  // Frontend URL
+  origin: 'http://https://project-f-bsis.vercel.app',  // Frontend URL
   methods: 'GET, POST, PUT, PATCH, DELETE',
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true  // Allow credentials (cookies) to be sent
@@ -36,7 +36,7 @@ app.use(cors(corsOptions));
 
 
 // app.use((req, res, next) => {
-//   res.setHeader('Access-Control-Allow-Origin', 'http://localhost:5173');
+//   res.setHeader('Access-Control-Allow-Origin', 'http://https://project-f-bsis.vercel.app');
 //   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
 //   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
 //   res.setHeader('Access-Control-Allow-Credentials', 'true'); 
